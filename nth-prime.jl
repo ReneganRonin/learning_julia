@@ -13,10 +13,10 @@ function is_prime(v)
     return true
 end
 
-for test in range(-2, step=1, stop=100)
-    is_it = is_prime(test)
-    println("$test is prime? $is_it")
-end
+# for test in range(-2, step=1, stop=100)
+#     is_it = is_prime(test)
+#     println("$test is prime? $is_it")
+# end
 
 function nth_prime(n)
     prime = 2
@@ -36,5 +36,6 @@ function nth_prime(n)
 end
 
 
-nth = nth_prime(10_000)
+nth = nth_prime(10_001)
+println("What is the 0-indexed $nth", "th prime number?")
 println("10_000 -> $nth")
